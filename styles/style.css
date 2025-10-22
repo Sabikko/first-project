@@ -136,3 +136,55 @@
 .company__text {
   font-size: 16px;
 }
+
+.content__philosophy {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  background-color: var(--peach-accent);
+}
+
+.philosophy__block-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 48px 20px;
+  color: var(--dark-gray);
+}
+
+.philosophy__title {
+  color: var(--accent-color-text);
+  font-weight: var(--font-weight-title);
+  font-size: 32px;
+  line-height: normal;
+}
+
+.philosophy__text {
+  margin-block-start: 24px;
+}
+
+.philosophy__link {
+  position: relative;
+  color: var(--accent-color-text);
+  font-size: 16px;
+}
+
+.philosophy__link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  background-color: var(--second-color-text);
+  block-size: 1px;
+  inline-size: 100%;
+}
+
+.philosophy__block-image {
+  max-block-size: 450px;
+}
+
+.philosophy__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
