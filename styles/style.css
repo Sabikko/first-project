@@ -31,6 +31,11 @@
   block-size: 24px;
 }
 
+.menu__toggle-icon {
+  inline-size: 18px;
+  block-size: 11px;
+}
+
 .menu__list {
   display: none;
 }
@@ -56,14 +61,14 @@
 .greeting__block-text {
   display: flex;
   flex-direction: column;
-  gap: 19px;
+  gap: 16px;
   padding: 48px 20px;
 }
 
 .greeting__about {
   font-weight: var(--font-weight-title);
   font-size: 32px;
-  line-height: 38px;
+  line-height: normal;
 }
 
 .greeting__about .accent-text {
@@ -81,6 +86,53 @@
 }
 
 .experience__overline {
+  color: var(--second-color-text);
+  font-weight: var(--font-weight-title);
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.experience__title {
+  font-weight: var(--font-weight-title);
+  font-size: 32px;
+  line-height: normal;
+}
+
+.experience__companies {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  margin-block-start: 40px;
+}
+
+.company__number {
+  color: var(--second-color-text);
+  font-size: 117px;
+  line-height: normal;
+}
+
+.company__block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.company__title {
+  font-size: 24px;
+}
+
+.experience__company:nth-of-type(1) .company__title .accent-text {
+  color: var(--green-accent);
+}
+
+.experience__company:nth-of-type(2) .company__title .accent-text {
+  color: var(--blue-accent);
+}
+
+.experience__company:nth-of-type(3) .company__title .accent-text {
+  color: var(--pink-accent);
+}
+
+.company__text {
+  font-size: 16px;
 }
