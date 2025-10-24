@@ -12,7 +12,7 @@
   <body class="page">
     <header class="header">
       <div class="header__logo-container">
-        <svg class="header__logo" fill="none" viewBox="0 0 79 24">
+        <svg class="header__logo" viewBox="0 0 79 24">
           <use href="./svg/logo.svg#logo"></use>
         </svg>
       </div>
@@ -374,16 +374,19 @@
           </p>
         </div>
         <div class="photography__buttons">
-          <button class="photography__button photography__button-active">
+          <button
+            type="button"
+            class="photography__button photography__button-active"
+          >
             <span class="photography__button-text">ITALY</span>
           </button>
-          <button class="photography__button">
+          <button type="button" class="photography__button">
             <span class="photography__button-text">AUSTRALIA</span>
           </button>
-          <button class="photography__button">
+          <button type="button" class="photography__button">
             <span class="photography__button-text">INDIA</span>
           </button>
-          <button class="photography__button">
+          <button type="button" class="photography__button">
             <span class="photography__button-text">BRAZIL</span>
           </button>
         </div>
@@ -414,9 +417,94 @@
           </div>
         </div>
       </section>
-      <section class="content__form">
-        <div class="form__block-text"></div>
+      <section class="content__contact">
+        <div class="contact__block-text">
+          <h2 class="contact__title">Let’s get started</h2>
+          <p class="contact__description">
+            Now that you know a lot about me, let me know if you are interested
+            to work with me.
+          </p>
+        </div>
+        <form class="contact__form">
+          <label for="name" class="form__name-label">Name</label>
+          <input id="name" name="user-name" type="text" class="form__input" />
+          <label for="email" class="form__name-label">Email</label>
+          <input
+            id="email"
+            name="user-email"
+            type="email"
+            class="form__input"
+          />
+          <label for="message" class="form__name-label">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            type="text"
+            class="form__input"
+          ></textarea>
+          <button class="form__button">
+            <span class="form__button-text">Let’s get started</span>
+          </button>
+        </form>
       </section>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__block-logo">
+            <svg class="footer__logo" viewBox="0 0 79 24">
+              <use href="./svg/logo.svg#logo"></use>
+            </svg>
+          </div>
+          <ul class="footer__block-social-media">
+            <li class="footer__social-media">
+              <svg viewBox="0 0 20 16">
+                <use href="./svg/twitter.svg"></use>
+              </svg>
+            </li>
+            <li class="footer__social-media">
+              <svg viewBox="0 0 20 20">
+                <use href="./svg/dribbble.svg"></use>
+              </svg>
+            </li>
+            <li class="footer__social-media">
+              <svg viewBox="0 0 18 18">
+                <use href="./svg/linkedin.svg"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block-menu">
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">Home</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">About</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">Work</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">Process</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__block-menu">
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">Store</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">Blog</a>
+            </li>
+            <li class="footer__menu-item">
+              <a href="#!" class="footer__menu-item-link">Reading List</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copy">
+          Not Copyright 2020 • Robin Williams. Webflow cloneable
+        </div>
+      </footer>
     </main>
   </body>
 </html>

@@ -13,6 +13,8 @@
   display: flex;
   justify-content: space-between;
   padding: 24px 20px;
+  background-color: var(--main-bg-color);
+  inline-size: 100%;
 }
 
 .header__logo {
@@ -578,4 +580,113 @@
   display: block;
   object-fit: cover;
   object-position: center;
+}
+
+.content__contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 48px 20px;
+}
+
+.contact__block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__title {
+  font-weight: var(--font-weight-title);
+  font-size: 32px;
+  line-height: normal;
+}
+
+.contact__description {
+  color: var(--second-color-text);
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 48px;
+}
+
+.form__name-label {
+  margin-block-end: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.form__input {
+  min-height: 50px;
+  margin-block-end: 40px;
+  border: none;
+  padding: 12px;
+  color: var(--first-color-text);
+  font-size: 18px;
+  background-color: var(--accent-color-text);
+}
+
+.contact__form textarea {
+  min-height: 100px;
+}
+
+.form__button {
+  border: none;
+  padding-block: 24px;
+  background-color: var(--bg-color-button);
+}
+
+.form__button-text {
+  color: var(--first-color-text);
+  font-weight: var(--font-weight-title);
+  font-size: 18px;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 48px 20px;
+  background-color: var(--accent-color-text);
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer__logo {
+  display: block;
+  block-size: 40px;
+  inline-size: 131px;
+}
+
+.footer__block-social-media {
+  display: flex;
+  gap: 16px;
+  margin-block-end: 48px;
+}
+
+.footer__social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  inline-size: 24px;
+  block-size: 24px;
+}
+
+.footer__menu-item {
+  min-block-size: 48px;
+}
+
+.footer__menu-item-link {
+  font-size: 16px;
+}
+
+.footer__copy {
+  margin-block-start: 48px;
+  color: var(--second-color-text);
+  font-size: 16px;
 }
