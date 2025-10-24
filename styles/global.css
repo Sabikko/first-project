@@ -18,7 +18,8 @@ p,
 ul,
 li,
 ol,
-button {
+button,
+blockquote {
   margin: 0;
   padding: 0;
 }

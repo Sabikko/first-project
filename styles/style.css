@@ -395,17 +395,17 @@
 .dubbble__link::before {
   content: '';
   position: absolute;
+  background-color: var(--second-color-text);
   inset-block-end: -3px;
   inset-inline-start: 0;
-  background-color: var(--second-color-text);
   inline-size: 100%;
   block-size: 1px;
 }
 
 .dubbble__block-image {
   margin-block-start: 64px;
-  background-color: var(--accent-color-text);
   border-radius: 8px;
+  background-color: var(--accent-color-text);
 }
 
 .dubbble__block-image-top {
@@ -418,10 +418,10 @@
 }
 
 .dubbble__circle {
+  border-radius: 50%;
+  background-color: var(--dark-gray);
   inline-size: 12px;
   block-size: 12px;
-  background-color: var(--dark-gray);
-  border-radius: 50%;
 }
 
 .dubbble__block-image-bottom {
@@ -430,8 +430,87 @@
 
 .dubbble__image {
   display: block;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
   object-fit: cover;
   object-position: center;
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+}
+
+.content__reviews {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 64px;
+  padding-block: 48px;
+}
+
+.reviews__block-text {
+  padding-inline: 20px;
+}
+
+.reviews__title {
+  font-weight: var(--font-weight-title);
+  font-size: 32px;
+  line-height: normal;
+}
+
+.reviews__description {
+  margin-block: 16px 40px;
+  color: var(--second-color-text);
+}
+
+.reviews__link {
+  position: relative;
+  font-size: 16px;
+}
+
+.reviews__link::before {
+  content: '';
+  position: absolute;
+  background-color: var(--second-color-text);
+  inset-block-end: -4px;
+  inset-inline-start: 0;
+  block-size: 1px;
+  inline-size: 100%;
+}
+
+.reviews__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-inline: 14px;
+}
+
+.card-review__block-image {
+  block-size: 360px;
+}
+
+.card-review__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-review__block-text {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  border: 1px solid var(--dark-gray);
+  border-block-start: none;
+  padding: 32px;
+}
+
+.card-review__quote {
+  font-weight: var(--font-weight-title);
+  font-size: 24px;
+}
+
+.card-review__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: var(--second-color-text);
+}
+
+.card-review__name {
+  font-weight: var(--font-weight-title);
 }
