@@ -48,3 +48,7 @@ ol {
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+button {
+  font-family: inherit;
+}
