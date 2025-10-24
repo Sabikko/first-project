@@ -338,9 +338,9 @@
 }
 
 .instagram__title {
+  color: var(--accent-color-text);
   font-weight: var(--font-weight-title);
   font-size: 32px;
-  color: var(--accent-color-text);
   line-height: normal;
 }
 
@@ -350,8 +350,8 @@
 
 .instagram__link {
   position: relative;
-  font-size: 16px;
   color: var(--accent-color-text);
+  font-size: 16px;
 }
 
 .instagram__link::before {
@@ -359,9 +359,9 @@
   position: absolute;
   bottom: -3px;
   left: 0;
+  background-color: var(--second-color-text);
   inline-size: 100%;
   block-size: 1px;
-  background-color: var(--second-color-text);
 }
 
 .instagram__block-image {
@@ -370,4 +370,68 @@
 
 .instagram__image {
   display: block;
+}
+
+.content__dubbble {
+  padding: 64px 20px;
+}
+
+.dubbble__title {
+  font-weight: var(--font-weight-title);
+  font-size: 55px;
+  line-height: normal;
+}
+
+.dubbble__description {
+  margin-block: 24px 40px;
+  color: var(--second-color-text);
+}
+
+.dubbble__link {
+  position: relative;
+  font-size: 16px;
+}
+
+.dubbble__link::before {
+  content: '';
+  position: absolute;
+  inset-block-end: -3px;
+  inset-inline-start: 0;
+  background-color: var(--second-color-text);
+  inline-size: 100%;
+  block-size: 1px;
+}
+
+.dubbble__block-image {
+  margin-block-start: 64px;
+  background-color: var(--accent-color-text);
+  border-radius: 8px;
+}
+
+.dubbble__block-image-top {
+  padding: 12px 16px;
+}
+
+.dubbble__circles {
+  display: flex;
+  gap: 6px;
+}
+
+.dubbble__circle {
+  inline-size: 12px;
+  block-size: 12px;
+  background-color: var(--dark-gray);
+  border-radius: 50%;
+}
+
+.dubbble__block-image-bottom {
+  block-size: 480px;
+}
+
+.dubbble__image {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
